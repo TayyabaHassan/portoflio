@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Tayyaba Hassan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Ensure this path is correct -->
+</head>
+<style>
+
+    /* Contact Section */
+.contact {
+    padding: 20px 0;
+    position:fixed;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 60px;
+    padding:  30px;
+    position: fixed;
+}
+
+.contact-info, .contact-form {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    margin-right: 100px;
+}
+
+.contact-info h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #00abf0; /* Match with your theme color */
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    color: #989191; /* Match with your theme color */
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 20px;
+    color: #989191 /* Match with your theme color */
+}
+
+.info-list li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info-list li i {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #fff; /* Match with your theme color */
+}
+
+.social-icons a {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 1.5rem;
+    color:#fff; /* Match with your theme color */
+}
+
+.social-icons a:hover {
+    color: #555;
+}
+
+.contact-form form {
+    background: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    border:3px solid #00abf0;
+    box-shadow: 0 2px 10px rgba(249, 251, 252, 0.851);
+    margin-left: 10px;
+}
+
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    background: transparent;
+    display: block;
+    margin-bottom: 10px;
+    color:#fff; /* Match with your theme color */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #c9d1d5;
+    border-radius: 5px;
+    font-size: 1rem;
+    color:#fff; /* Match with your theme color */
+    background: transparent; /* Slightly transparent white background */
+}
+
+.contact-form button.btn {
+    display: inline-block;
+    background: transparent; /* Match with your theme color */
+    color: #fff;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button.btn:hover {
+    background: #555;
+}
+
+
+</style>
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tayyaba Hassan.</a>
+
+        <nav class="navbar">
+            <a href="home.html" class="active">HOME</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <div class="contact-info">
+                <h2>Contact Me</h2>
+                <p>If you have any questions, feel free to reach out via the form below or through my social media channels.</p>
+                <ul class="info-list">
+                    <li><i class='bx bx-map'></i> 123 Street, City, Country</li>
+                    <li><i class='bx bx-envelope'></i> email@example.com</li>
+                    <li><i class='bx bx-phone'></i> +123 456 7890</li>
+                </ul>
+                <div class="social-icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                    <a href="#"><i class='bx bxl-linkedin'></i></a>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <form action="submit_form.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+</html>

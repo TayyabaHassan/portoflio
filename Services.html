@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website HTML CSS only | codehal</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body style="overflow: hidden;">
+    <header class="header">
+        <a href="#" class="logo">Tayyaba Hassan.</a>
+
+        <nav class="navbar">
+            <a href="home.html" class="active">HOME</a>
+            <a href="Services.html">SERVICES</a>
+            <a href="portfolio.html">PORTFOLIO</a>
+            <a href="contact.html">CONTACT</a>
+            <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <style>
+        /* Service Section */
+        .services {
+            margin-top: 90px;
+            padding: 50px 0;
+            background: transparent;
+            /* Adjust to match your theme */
+            position: relative;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            flex-wrap: wrap;
+            padding: 0 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .service-item {
+            width: 30%;
+            border: 2px solid #00abf0;
+            background: transparent;
+            /* Adjust to match your theme */
+            border-radius: 5px;
+            overflow: hidden;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            margin-bottom: 30px;
+            margin-left: 20px;
+        }
+
+        .service-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-img {
+            width: 100%;
+        }
+
+        .service-img img {
+            width: 100%;
+            height: auto;
+            border-top-left-radius: 5px;
+            border-bottom-left-radius: 5px;
+            max-height: 200px;
+            object-fit: cover;
+        }
+
+        .service-content {
+            width: 60%;
+            padding: 20px;
+        }
+
+        .service-content h2 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-content p {
+            color: #e2d5d5;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #333;
+            /* Adjust to match your theme */
+            color: #fff;
+            padding:  10px 20px;
+            text-decoration: none;
+            border: #00abf0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #555;
+        }
+    </style>
+    <section class="services">
+        <div class="container">
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="g.jpg" alt="Service 1">
+                </div>
+                <div class="service-content">
+                    <h2>Service Title 1</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="a1.jpg" alt="Service 2">
+                </div>
+                <div class="service-content">
+                    <h2>Service Title 2</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+            <div class="service-item">
+                <div class="service-img">
+                    <img src="e.jpeg" alt="Service 3">
+                </div>
+                <div class="service-content">
+                    <h2>Service Title 3</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                    <a href="#" class="btn">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

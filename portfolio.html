@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio | Tayyaba Hassan</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Tayyaba Hassan.</a>
+        <nav class="navbar">
+          <a href="home.html" class="active">HOME</a>
+          <a href="Services.html">SERVICES</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+          <a href="contact.html">CONTACT</a>
+          <a href="about.html">ABOUT</a>
+        </nav>
+    </header>
+
+    <style>
+
+      /* Portfolio Section */
+.portfolio {
+    margin-top: 50px;
+    padding: 40px 0;
+    background: transparent;
+    /* Adjust to match your theme */
+    position: relative;
+}
+
+.container {
+    max-width: 1200px;
+    display: flex;
+    margin: auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.portfolio-item {
+    width: 30%;
+    border: 2px solid #1b9bc6;
+    background: transparent;
+    /* Adjust to match your theme */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    
+}
+
+.portfolio-item:hover {
+    transform: translateY(-15px);
+}
+
+.portfolio-img {
+    width: 100%;
+}
+
+.portfolio-img img {
+    height: auto;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    max-height: 200px;
+    object-fit: cover;
+}
+.portfolio h1{
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 30px;
+  color: #00abf0;
+}
+
+.portfolio-content {
+    width: 100%;
+    padding: 10px;
+}
+
+.portfolio-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.portfolio-content p {
+    color: #e2d5d5;
+    margin-bottom: 20px;
+}
+.portfolio .com p{
+  text-align: center;
+  margin-top: 20px;
+  color: #ffffff;
+}
+
+
+    </style>
+
+    <section class="portfolio">
+      <h1>My Projects</h1>
+        <div class="container">
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="s4.png" alt="Project 1">
+                </div>
+                <div class="portfolio-content">
+                    <h2>Linkedin Clone</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                   
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="s3.png" alt="Project 2">
+                </div>
+                <div class="portfolio-content">
+                    <h2>Reading Website</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                  
+                </div>
+            </div>
+            <div class="portfolio-item">
+                <div class="portfolio-img">
+                    <img src="s1.png" alt="Project 3">
+                </div>
+                <div class="portfolio-content">
+                    <h2>Portfolio website</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris feugiat nisl id magna mattis, nec
+                        pharetra ipsum tempus.</p>
+                   
+                </div>
+            </div>
+        </div>
+        <div class="com">
+          <p>These are only frontend websites designed uisng HTML and CSS only.</p>
+        </div>
+    </section>
+</body>
+
+</html>
